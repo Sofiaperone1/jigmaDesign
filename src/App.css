@@ -1,260 +1,390 @@
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h1 {
-
-  width: 43%;
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 3%;
-  letter-spacing: 1px;
-  line-height: 3.2rem;
-}
-
 .container {
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  margin-bottom: 5%;
-}
-
-.content {
-  width: 63%;
-  background-color:#f0f6ff;
-  padding: 1%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  border-radius: 40px;
-}
-
-.content h2 {
-  width: 79%;
-  padding-left: 5%;
-  font-size: 32px;
-}
-
-.content p {
-  width: 88%;
-  padding-left: 5%;
-  font-size: 16px;
-  line-height: 1.7rem;
-  margin-top: 5%;
-  color: rgba(0, 0, 0, 0.726);
-}
-
-.img_cont{
-  background-color: white;
-  border-radius: 40px;
-  padding: 4%;
-}
-
-.img_cont img {
   width: 100%;
-}
-
-
-.services ul {
-  list-style: none;
-  padding: 0 0 0 5%;
-  width: 80%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 4%;
+  height:100vh;
 }
-.services ul li {
+
+/* LEFT CONTAINER */
+.subtitle {
+  line-height: 22px;
+}
+.container .left {
+  background-image: url(./imgs/sign/fondo.png);
   width: 50%;
-  margin-bottom: 4%;
-  font-size: 1.3rem;
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-.services ul li img {
-margin-right: 4%;
-}
-
-.content button{
-  width: 32%;
-  margin-left: 5%;
-  height: 15%;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  padding: 2%;
-  border-radius: 6px;
-  border: transparent;
-  background: rgb(36,91,255);
-  background: linear-gradient(90deg, rgba(36,91,255,1) 0%, rgba(50,146,255,1) 52%, rgba(65,203,255,0.9528186274509804) 77%); 
+  align-items: flex-start;
+  padding-top: 2%;
+  background-size: cover;
 }
 
-.content button a {
+.left_content {
+  width: 65%;
+  margin-right: -15%;
+}
+
+.left h2, h1,p {
   color: white;
-  font-size: 20px;
-  text-decoration: none;
+ 
+}
+.left h1 {
+  font-size: 40px;
 }
 
-.sidebar_menu {width: 37%;
+.left h2 {
+  font-size: 26px;
+}
+.left h2 span {
+    color: #8643FF;
 }
 
-.sidebar_menu ul {
-  list-style: none;
+.left p {
+  font-size: 18px;
+}
+
+.left p span {
+  font-weight: bold;
+}
+
+.left .checks ul li {
+  display: flex;
+}
+
+.checks ul {
+  padding-left: 0;
+  margin-top: 7%;
+  margin-bottom: 9%;
+}
+.checks ul li p {
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/* CARROUSEL */
+
+.carrousel{
+  background:linear-gradient(to right, #AB7DFF, #ed95ff2e) border-box;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  width: 97%;
+  margin-top: 10%;
+}
+
+.slick-slider {
+  background-image: url(./imgs/sign/fondo.png);
+  padding: 5%;
+  border-radius: 15px;
+}
+
+.slick-dots{
+  margin-left: -5% !important;
+  margin-bottom: -22px !important;
+
+}
+
+.slick-dots li button:before {
+  color: white !important;
+}
+
+.slick-slider .slick-prev, .slick-next {
+  display: none !important;
+}
+
+
+/* RIGHT CONTAINER */
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1%;
+}
+
+.right h1 {
+  color: black;
+  font-size: 40px;
+
+}
+.right p {
+  color: rgb(63, 63, 63);
+  font-size: 18px;
+}
+
+.right_content {
+  width: 65%;
+  margin-left: -15%;
+}
+
+.sign_buttons {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.sign_buttons p {
+  font-size: 19px;
+  margin: 4% 0% 4% 0%;
+}
+
+.sign_buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7px;
+  border: 2px solid gray;
+  width: 48%;
+  margin-right: 2%;
+}
+
+.sign_buttons button img{
+  margin-right: 4%;
+}
+.sign_inputs {
+  margin-bottom: 5%;
+}
+.sign_inputs span {
+  color: red;
+  margin-left: 1%;
+}
+.sign_inputs input {
+  width: 96%;
+  height: 45px;
+  border-radius: 6px;
+  border: 2px solid gray;
+  padding-left: 2%;
+  font-size: 17px;
+  color: gray;
+  margin-bottom: 1%;
+}
+.sign_inputs p{
+  margin-bottom: 1.5%;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center; 
+  width: 100%;
+}
+.custom-checkbox button{
+  border: transparent;
+  background: transparent;
+  width: 40%;
+  color: #7122FF;
+}
+.custom-checkbox span button{
+  border: transparent;
+  background: transparent;
+  width: 20%;
+  color: #7122FF;
+}
+.custom-checkbox input[type="checkbox"] {
+  width: 20px; /* Ancho deseado para el checkbox */
+  height: 20px; /* Altura deseada para el checkbox */
+}
+
+.check_inputs p {
+  margin-top: 1% !important;
+  margin-bottom: 1% !important;
   width: 100%;
 }
 
-.sidebar_menu ul li {
-  height: 81px;
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  padding-left: 6%;
-  width: 77%;
-  border: 1px solid #80808017;
-  margin-bottom: 3%;
-  display: flex;
-  align-items: center;
+.custom-checkbox p span {
+  color: #7122FF;
+  margin-left: 2%;
 }
 
-.sidebar_menu ul li button {
-  background: transparent;
-  font-size:1.2rem;
+.check_inputs input {
+  margin-right: 1.5%;
+}
+
+.createAccount {
+  width: 100%;
+  height: 45px;
+  background-color:#7122FF;
+  color: white;
   border: transparent;
-  letter-spacing: 0.3px;
-  padding-left: 5%;
+  border-radius: 6px;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  font-size: 19px;
+  font-weight: bold;
+}
+.createAccount:hover {
+  background-color:#6f22ff9d;
 }
 
-.train{
-  margin-top: 5%;
+.signIn span {
+  color: #7122FF;
+  margin-left: 1%;
+  font-weight: bold;
+}
+
+
+/* CHECK YOUR EMAIL */ 
+
+.square_inputs {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 8%;
   margin-bottom: 6%;
 }
+.square_inputs input {
+  width: 25%;
+  height: 80px;
+  margin-right: 2%;
+  border-radius: 6px;
+  border: 2px solid gray;
+  font-size: 40px;
+  text-align: center;
 
-.analyse{
-  margin-top: 6%;
 }
-.analyse ul {
-  margin-bottom: 0;
-  padding-bottom: 0;
+.square_inputs input:hover{  border-color:#7122FF;} 
+
+.envelope {
+  margin-bottom: -2%;
+}
+.goBack {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
 }
 
-@media screen and (max-width:1500px){ 
-  .services ul {
-      width: 89%;}
-  .sidebar_menu ul li button {
-      background: transparent;
-      font-size: 1rem;}  
-   h1 {
-        width: 51%;
-        font-size: 2.8rem;}
-    
-  .content h2 {
-    margin-top: 8%;}
+.goBack img {
+  margin-right: 3%;
+}
+.goBack a{
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+}
+.goBack a:hover{
+  color: #7122FF;
+}
+
+
+/* RESPONSIVES */
+
+@media screen and (min-width:1800px){ 
+
+  .container .left {padding-top: 4.5%;}
+  .container .right{padding-top: 3.5%;}
+}
+
+
+@media screen and (max-width:1450px){
+  .right h1 , .left h1{
+    font-size: 35px;
+}
+.left h2 {
+  font-size: 22px;
+  margin-bottom: -2%;
+}
+.sign_buttons p {
+  font-size: 17px;
+}
+.slick-slide img {
+  display: block;
+  width: 99%;
+}
+.sign_inputs input {
+  height: 35px;
+}
+.createAccount {
+  height: 40px;
   }
-@media screen and (max-width:1300px){ 
+.square_inputs input {
+    height: 67px;}
+}
 
+@media screen and (max-width:1250px){
+  .sign_buttons p {
+    font-size: 15px;}
+  .sign_buttons img {
+    width: 11%; }
+  .sign_inputs input {
+    height: 31px;
+    font-size: 15px;}
+  .sign_inputs span {
+  font-size: 13px;}
+  .createAccount {
+  height: 37px;
+  font-size: 17px;}
+  .sign_inputs p {
+  margin-top: 3%;}
+  .left p {
+  font-size: 17px;}
+}
+
+@media screen and (max-width:1120px){
+  .sign_buttons {
+    width: 102%;
+  }
+  .check_inputs p {font-size: 16px;}
+  .right p { font-size: 16px;}
+  .sign_buttons p {font-size: 14px;}
+  .left p {font-size: 16px;}
+  .square_inputs input {
+    width: 25%;
+    height: 51px;}
+}
+
+@media screen and (max-width:900px){
+  .right h1, .left h1 {
+    font-size: 30px;
+    }
+  .right h1{
+    margin-bottom: 0%;
+  }
+  .left h2 { font-size: 18px;}
+  .createAccount {
+    height: 33px;
+    font-size: 14px;}
+  .right p {
+      font-size: 14px;}
+  .left p {
+        font-size: 14px;}  
+  .sign_buttons {
+    flex-direction: column;}
+  .sign_buttons button{
+    width: 100%; margin-top: 2%; height: 33px;}  
+  .sign_buttons button img {
+    width: 6%;
+  }
+  .sign_inputs input {
+    height: 27px;
+    font-size: 13px;
+  }
   .container {
-    width: 90%;
-  }
-  .services ul li {
-    width: 50%;
-    margin-bottom: 4%;
-    font-size: 1.1rem;} 
-
-    h1 {
-      width: 51%;
-      font-size: 2.7rem;}
-
-    .sidebar_menu ul li button {
-          background: transparent;
-          font-size: 0.9rem;}  
-        
-    .content h2 {
-          margin-top: 8%;} 
-        }
-@media screen and (max-width:1000px){
-
-h1 {
-    width: 57%;
-    font-size: 2rem;
-    line-height: 2.2rem;
-}
-.container {
-  width: 95%;
-}
-.content h2 {
-  font-size: 25px;
-}
-
-.services ul li { font-size: 1.1rem; 
-  width: 48%;
-}
-.services ul {
-  width: 97%;
-}
-
-.content button {
-  width: 54%;
-  font-size: 18px;
-}
-.sidebar_menu ul {
-  padding-left: 0;
-}
-
-.sidebar_menu ul li {
-  height: 62px;
-  width: 87%;
-  padding-left: 4%;
-}
-.sidebar_menu ul li button {
-  font-size: 14px;
-  letter-spacing: 0px;
-  padding-left: 0; 
-  margin-left: 2%;
+    height: 105vh;
 }
 }
 
 @media screen and (max-width:700px){
-  h1 {
-        width: 90%;
-    margin: 6% 0 5% 0;
+  .container {
+    display: flex; flex-direction: column;
+  }
+  .container .left{ width: 100%;}
+  .left_content {
+     margin-right:0; 
+     margin-bottom: 18%
+     ;width:81%;
+     margin-top: 5%;
+  }
+  .right {
+    width: 100%;
 }
-  
-.container {
-  flex-direction: column;
-}
-.sidebar_menu {
-  width: 100%;
-}
-.sidebar_menu ul li {
-  width: 94%;
-  padding-left: 6%;
-}
-.sidebar_menu ul li button {
-font-size: 17px;
-letter-spacing: 0px;
-padding-left: 0;
-margin-left: 5%;
-}
-.content {
-  width: 99%;
-  margin-top: 4%;
-}
-.content h2 {
-  text-align: center;
-  width: 90%;
-}
-
-.services ul {
-  width: 92%;
+.right_content{
+  margin-left: 0;
+  margin-bottom: 5%;
   margin-top: 5%;
+  width: 81%;
 }
-.services ul li {
-  font-size: 15px;
-  margin-bottom: 5%;
-}
-.content button {
-  width: 90%;
-  font-size: 18px;
-  margin-bottom: 5%;
+.goBack{margin-bottom: 10%;}
+.square_inputs input{
+  font-size: 30px;
 }
 }

@@ -1,0 +1,260 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    width: 43%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3%;
+    letter-spacing: 1px;
+    line-height: 3.2rem;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 5%;
+  }
+  
+  .content {
+    width: 63%;
+    background-color:#f0f6ff;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 40px;
+  }
+  
+  .content h2 {
+    width: 79%;
+    padding-left: 5%;
+    font-size: 32px;
+  }
+  
+  .content p {
+    width: 88%;
+    padding-left: 5%;
+    font-size: 16px;
+    line-height: 1.7rem;
+    margin-top: 5%;
+    color: rgba(0, 0, 0, 0.726);
+  }
+  
+  .img_cont{
+    background-color: white;
+    border-radius: 40px;
+    padding: 4%;
+  }
+  
+  .img_cont img {
+    width: 100%;
+  }
+  
+  
+  .services ul {
+    list-style: none;
+    padding: 0 0 0 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4%;
+  }
+  .services ul li {
+    width: 50%;
+    margin-bottom: 4%;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+  }
+  .services ul li img {
+  margin-right: 4%;
+  }
+  
+  .content button{
+    width: 32%;
+    margin-left: 5%;
+    height: 15%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 2%;
+    border-radius: 6px;
+    border: transparent;
+    background: rgb(36,91,255);
+    background: linear-gradient(90deg, rgba(36,91,255,1) 0%, rgba(50,146,255,1) 52%, rgba(65,203,255,0.9528186274509804) 77%); 
+  }
+  
+  .content button a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .sidebar_menu {width: 37%;
+  }
+  
+  .sidebar_menu ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .sidebar_menu ul li {
+    height: 81px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding-left: 6%;
+    width: 77%;
+    border: 1px solid #80808017;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar_menu ul li button {
+    background: transparent;
+    font-size:1.2rem;
+    border: transparent;
+    letter-spacing: 0.3px;
+    padding-left: 5%;
+  }
+  
+  .train{
+    margin-top: 5%;
+    margin-bottom: 6%;
+  }
+  
+  .analyse{
+    margin-top: 6%;
+  }
+  .analyse ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  @media screen and (max-width:1500px){ 
+    .services ul {
+        width: 89%;}
+    .sidebar_menu ul li button {
+        background: transparent;
+        font-size: 1rem;}  
+     h1 {
+          width: 51%;
+          font-size: 2.8rem;}
+      
+    .content h2 {
+      margin-top: 8%;}
+    }
+  @media screen and (max-width:1300px){ 
+  
+    .container {
+      width: 90%;
+    }
+    .services ul li {
+      width: 50%;
+      margin-bottom: 4%;
+      font-size: 1.1rem;} 
+  
+      h1 {
+        width: 51%;
+        font-size: 2.7rem;}
+  
+      .sidebar_menu ul li button {
+            background: transparent;
+            font-size: 0.9rem;}  
+          
+      .content h2 {
+            margin-top: 8%;} 
+          }
+  @media screen and (max-width:1000px){
+  
+  h1 {
+      width: 57%;
+      font-size: 2rem;
+      line-height: 2.2rem;
+  }
+  .container {
+    width: 95%;
+  }
+  .content h2 {
+    font-size: 25px;
+  }
+  
+  .services ul li { font-size: 1.1rem; 
+    width: 48%;
+  }
+  .services ul {
+    width: 97%;
+  }
+  
+  .content button {
+    width: 54%;
+    font-size: 18px;
+  }
+  .sidebar_menu ul {
+    padding-left: 0;
+  }
+  
+  .sidebar_menu ul li {
+    height: 62px;
+    width: 87%;
+    padding-left: 4%;
+  }
+  .sidebar_menu ul li button {
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding-left: 0; 
+    margin-left: 2%;
+  }
+  }
+  
+  @media screen and (max-width:700px){
+    h1 {
+          width: 90%;
+      margin: 6% 0 5% 0;
+  }
+    
+  .container {
+    flex-direction: column;
+  }
+  .sidebar_menu {
+    width: 100%;
+  }
+  .sidebar_menu ul li {
+    width: 94%;
+    padding-left: 6%;
+  }
+  .sidebar_menu ul li button {
+  font-size: 17px;
+  letter-spacing: 0px;
+  padding-left: 0;
+  margin-left: 5%;
+  }
+  .content {
+    width: 99%;
+    margin-top: 4%;
+  }
+  .content h2 {
+    text-align: center;
+    width: 90%;
+  }
+  
+  .services ul {
+    width: 92%;
+    margin-top: 5%;
+  }
+  .services ul li {
+    font-size: 15px;
+    margin-bottom: 5%;
+  }
+  .content button {
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 5%;
+  }
+  }
+  
