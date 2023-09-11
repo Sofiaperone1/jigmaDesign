@@ -1,0 +1,32 @@
+/* CARROUSEL */
+
+.carrousel{
+    background:linear-gradient(to right, #AB7DFF, #ed95ff2e) border-box;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    width: 95%;
+    margin-top: 10%;
+  }
+  .carouselImg {
+    width: 100%;
+  }
+  .slick-slider {
+    background-image: url(../../imgs/sign/fondo.png);
+    padding: 5%;
+    border-radius: 15px;
+  }
+  
+  .slick-dots{
+    margin-left: -5% !important;
+    margin-bottom: -22px !important;
+  
+  }
+  
+  .slick-dots li button:before {
+    color: white !important;
+  }
+  
+  .slick-slider .slick-prev, .slick-next {
+    display: none !important;
+  }
+  
