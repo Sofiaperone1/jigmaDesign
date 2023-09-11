@@ -1,19 +1,26 @@
-import React, {useState}from 'react'
-import LeftContent from './leftContent'
-import Google from "./imgs/sign/Google.svg"
-import apple from "./imgs/sign/apple.svg"
+import React from 'react'
 import "./App.css"
-
+import { Routes,Route, Link } from "react-router-dom";
+import SignUp from './views/SignSection/SignUp';
+import SignIn from './views/SignSection/SignIn';
+import ConfirmEmail from './views/SignSection/ConfirmEmail';
 
 const App = () => {
+ 
+  return (
+ 
+        <div>
+           
+           <Routes>
+            <Route path="/SignIn" element={<SignIn/>} />
+            <Route path="/SignUp" element={<SignUp/>} />
+            <Route path="/ConfirmEmail" element={<ConfirmEmail/>} />
+            </Routes>
 
-  return(
-    <div>
-      Esta es la app
-    </div>
-  )
-}
-
-
+      
+        </div>
+           
+      );}
+  
 export default App;
 

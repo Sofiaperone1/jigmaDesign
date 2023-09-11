@@ -1,8 +1,8 @@
-import React from 'react'
-import LeftContent from './leftContent'
-import Google from "./imgs/sign/Google.svg"
-import apple from "./imgs/sign/apple.svg"
-import "./App.css"
+import React,{useState} from 'react'
+import LeftSignContent from '../../components/leftSignContent/leftSignContent'
+import Google from "../../imgs/sign/Google.svg"
+import apple from "../../imgs/sign/apple.svg"
+import "./signSection.css"
 
 
 const SignUp = () => {
@@ -42,7 +42,7 @@ const SignUp = () => {
     <div className='container'>
       
       <div className='left'>
-       <LeftContent showParagraph={showParagraph}/>
+       <LeftSignContent showParagraph={showParagraph}/>
       </div>
 
       <div className='right'>
@@ -56,6 +56,8 @@ const SignUp = () => {
             <button onClick={signUpApple}><img src={apple} alt="apple" /><p>Sign up with Apple</p></button>
           </div>
           
+          <p className='or'>Or</p>
+
           <div className='sign_inputs'>
             <p>Name*</p>
             <input type="text" placeholder="Enter your name" />

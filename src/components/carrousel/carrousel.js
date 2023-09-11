@@ -1,9 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-import carrousel from "./imgs/sign/carrousel.png"
+import carrousel from "../../imgs/sign/carrousel.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./App.css"
+import "./carrousel.css"
 
 const Carrousel = () => {
     
@@ -13,8 +13,7 @@ const Carrousel = () => {
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true, // Habilitar el autoplay
-        autoplaySpeed: 4000, 
+      
       };
 
   return (

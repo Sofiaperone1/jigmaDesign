@@ -1,13 +1,14 @@
 import React, {useState}from 'react'
-import LeftContent from './leftContent'
-import Google from "./imgs/sign/Google.svg"
-import apple from "./imgs/sign/apple.svg"
-import "./App.css"
+import LeftSignContent from '../../components/leftSignContent/leftSignContent'
+import Google from "../../imgs/sign/Google.svg"
+import apple from "../../imgs/sign/apple.svg"
+import "./signSection.css"
 
 
 const SignIn = () => {
 
   const showParagraph = false;
+  const changeSubtitle = true;
 
   const doSomething = () => {
     alert("do something")
@@ -40,11 +41,11 @@ const SignIn = () => {
   return (
     <div className='container'>
       
-      <div className='left' style={{paddingTop:"5%"}}>
-       <LeftContent showParagraph={showParagraph} />
+      <div className='left' style={{paddingTop:"3%"}}>
+       <LeftSignContent showParagraph={showParagraph} changeSubtitle={changeSubtitle} />
       </div>
 
-      <div className='right' style={{paddingTop:"5%"}}>
+      <div className='right' style={{paddingTop:"3%"}}>
 
         <div className='right_content'>
           <h1>Sign In </h1>
@@ -54,7 +55,8 @@ const SignIn = () => {
             <button onClick={signInGoogle}><img src={Google} alt="google" /><p>Sign in with Google</p></button>
             <button onClick={signInApple}><img src={apple} alt="apple" /><p>Sign in with Apple</p></button>
           </div>
-          
+          <p className='or'>Or</p>
+
           <div className='sign_inputs'>
       
             <p>Email*</p>

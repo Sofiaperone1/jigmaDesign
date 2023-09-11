@@ -1,13 +1,17 @@
 import React from 'react'
-import Carrousel from './carrousel'
-import check from "./imgs/test/check.svg"
+import Carrousel from '../carrousel/carrousel'
+import check from "../../imgs/test/check.svg"
+import "./leftSignContent.css"
 
-const LeftContent = ({ showParagraph }) => {
+const LeftSignContent = ({ showParagraph,changeSubtitle }) => {
   return (
     <div className='left_content'>
 
           <h2>Jigma.<span>io</span></h2>
-          <h1>Start your <br/> journey with us.</h1>
+
+          {changeSubtitle ? ( <h1>Welcome Back! Please sign in to your Jigma account</h1> ) : (
+          <h1>Start your <br/> journey with us.</h1> )}
+          
           <p>The Ultimate <span>No-Code</span> Tool for Training your Own AI Assistant</p>
 
           {showParagraph && <div className='checks'>
@@ -26,4 +30,4 @@ const LeftContent = ({ showParagraph }) => {
   )
 }
 
-export default LeftContent
+export default LeftSignContent

@@ -1,0 +1,63 @@
+
+.subtitle {
+    line-height: 22px;
+    margin-top: -2%;
+  }
+  .container .left {
+    background-image: url(../../imgs/sign/fondo.png);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    padding-top: 2%;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .left_content {
+    width: 65%;
+    margin-right: -15%;
+  }
+  
+  .left h2, h1,p {
+    color: white;
+   
+  }
+  .left h1 {
+    font-size: 40px;
+    font-family: 'Prompt', sans-serif;
+    line-height: 39px;
+  }
+  
+  .left h2 {
+    font-size: 26px;
+    font-family: 'Prompt', sans-serif;
+  }
+  .left h2 span {
+      color: #8643FF;
+  }
+  
+  .left p {
+    font-size: 16px;
+  }
+  
+  .left p span {
+    font-weight: bold;
+  }
+  
+  .left .checks ul li {
+    display: flex;
+  }
+  
+  .checks ul {
+    padding-left: 0;
+    margin-top: 7%;
+    margin-bottom: 9%;
+  }
+  .checks ul li p {
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  

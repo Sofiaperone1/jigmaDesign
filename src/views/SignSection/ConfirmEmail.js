@@ -1,11 +1,11 @@
 import React from 'react'
-import LeftContent from './leftContent'
-import envelope from "./imgs/sign/envelope.png"
-import arrow from "./imgs/sign/arrow.png"
-import "./App.css"
+import LeftContent from '../../components/leftSignContent/leftSignContent'
+import envelope from "../../imgs/sign/envelope.png"
+import arrow from "../../imgs/sign/arrow.png"
+import "./signSection.css"
 
 
-const CheckEmail = () => {
+const confirmEmail = () => {
 
   const showParagraph = true;
 
@@ -53,7 +53,7 @@ const CheckEmail = () => {
   )
 }
 
-export default CheckEmail;
+export default confirmEmail;
 
 
 
